@@ -1,0 +1,1 @@
+docker run -d -p 9181:3000 --name=grafana grafana/grafana-enterprise:latest
