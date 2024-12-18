@@ -8,7 +8,7 @@ docker volume create prometheus-data
 # Start Prometheus container
 docker run \
     -d \
-    -p 9090:9090 \
+    -p 9192:9090 \
     --name=prometheus \
     -v /passion/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
     -v prometheus-data:/prometheus \
