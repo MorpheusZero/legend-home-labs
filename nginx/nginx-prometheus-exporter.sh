@@ -1,1 +1,1 @@
-docker run -p 9113:9113 nginx/nginx-prometheus-exporter:1.4.0 --nginx.scrape-uri=http://10.0.0.4:82/nginx_status
+docker run -d -p 9113:9113 --name=nginx-prometheus-exporter nginx/nginx-prometheus-exporter:1.4.0 --nginx.scrape-uri=http://10.0.0.4:82/nginx_status
